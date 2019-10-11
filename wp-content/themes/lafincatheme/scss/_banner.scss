@@ -1,0 +1,385 @@
+.banner{
+	letter-spacing: 10px;
+	@media only screen and (min-width: 768px){
+		letter-spacing: 30px;
+	}
+	&:before{
+		content: "";
+		position: absolute;
+		top: 0;
+		display: none;
+		height: 100vh;
+		width: 50%;
+		background: $amarillo;
+		@media only screen and (min-width: 768px){
+			display: block;
+		}
+	}
+	&:after{
+		content: "";
+		position: absolute;
+		left: 50%;
+		top: 75px;
+		transform: translateX(-50%);
+		display: block;
+		height: 100vh;
+		width: 100vw;
+		background: $celeste;
+		background: -moz-linear-gradient(top, $celeste 50%, $celeste 50%, $amarillo 50%);
+		background: -webkit-gradient(left top, left bottom, color-stop(50%, $celeste), color-stop(50%, $celeste), color-stop(50%, $amarillo));
+		background: -webkit-linear-gradient(top, $celeste 50%, $celeste 50%, $amarillo 50%);
+		background: -o-linear-gradient(top, $celeste 50%, $celeste 50%, $amarillo 50%);
+		background: -ms-linear-gradient(top, $celeste 50%, $celeste 50%, $amarillo 50%);
+		background: linear-gradient(to bottom, $celeste 50%, $celeste 50%, $amarillo 50%);
+		@media only screen and (min-width: 768px){
+			top: 85px;
+			width: 90vw;
+			background: $celeste;
+			background: -moz-linear-gradient(left, 0%, $celeste 50%, $amarillo 50%, $amarillo 100%);
+			background: -webkit-gradient(left top, right top, color-stop(0%, $celeste), color-stop(50%, $celeste), color-stop(50%, $amarillo), color-stop(100%, $amarillo));
+			background: -webkit-linear-gradient(left, $celeste 0%, $celeste 50%, $amarillo 50%, $amarillo 100%);
+			background: -o-linear-gradient(left, $celeste 0%, $celeste 50%, $amarillo 50%, $amarillo 100%);
+			background: -ms-linear-gradient(left, $celeste 0%, $celeste 50%, $amarillo 50%, $amarillo 100%);
+			background: linear-gradient(to right, $celeste 0%, $celeste 50%, $amarillo 50%, $amarillo 100%);
+		}
+	}
+	h2{
+		font-size: 20px;
+		font-weight: 100;
+		position: relative;
+		z-index: 9;
+		@media only screen and (min-width: 768px){
+			font-size: 40px;
+		}
+	}
+	h1{
+		font-size: 35px;
+		font-weight: 100;
+		letter-spacing: 20px;
+		position: relative;
+		z-index: 9;
+		@media only screen and (min-width: 768px){
+			font-size: 200px;
+		}
+	}
+	.img-banner{
+		position: absolute;
+		z-index: 0;
+		top: 50%;
+		left: 50%;
+	}
+	.mazorca{
+		max-height: 400px;
+		z-index: 7;
+		transform: translateY(-50%) translateX(-50%);
+		@media only screen and (min-width: 768px){
+			animation-duration: 1s;
+			animation-name: mazorca;
+			max-height: 500px;
+		}
+	}
+
+	.campecino{
+		z-index: 6;
+		max-width: 200px;
+		transform: translateY(-130%) translateX(-95%);
+		@media only screen and (min-width: 768px){
+			animation-duration: 1s;
+			animation-name: campecino;
+			max-width: 350px;
+			transform: translateY(-100%) translateX(-100%);
+		}
+	}
+	.arepa2{
+		z-index: 5;
+		transform: translateY(-110%) translateX(-20%);
+		max-width: 150px;
+		@media only screen and (min-width: 768px){
+			animation-duration: 1s;
+			animation-name: arepa2;
+			max-width: 250px;
+			transform: translateY(-90%) translateX(-20%);
+		}
+	}
+	.arepa1{
+		z-index: 5;
+		transform: translateY(40%) translateX(-90%);
+		max-width: 120px;
+		@media only screen and (min-width: 768px){
+			animation-duration: 1s;
+			animation-name: arepa1;
+			max-width: 170px;
+			transform: translateY(40%) translateX(-90%);
+		}
+	}
+	.nube{
+		z-index: 5;
+		top: 2%;
+		left: 10%;
+		max-width: 90px;
+		transform: translateY(-2%) translateX(-10%);
+		@media only screen and (min-width: 768px){
+			animation: floatnub 5s ease-in-out infinite;
+			max-width: 190px;
+			top: 10%;
+			transform: translateY(-10%) translateX(-10%);
+		}
+	}
+	.colibri{
+		z-index: 5;
+		max-width: 70px;
+	    transform: translateY(100px) translateX(70px);
+		@media only screen and (min-width: 768px){
+			animation: float 2s ease-in-out infinite;
+			max-width: 80px;
+			transform: translateY(150px) translateX(150px);
+		}
+	}
+	.maiz{
+		z-index: 5;
+		max-width: 20px;
+		transform: translateY(200px) translateX(-120px);
+		@media only screen and (min-width: 768px){
+			animation-duration: 1s;
+			animation-name: maiz;
+			max-width: 30px;
+			transform: translateY(190px) translateX(-200px);
+		}
+	}
+	&-receta{
+		letter-spacing: 0;
+		overflow: hidden;
+		h2{
+			letter-spacing: 10px;
+		}
+		h2:last-child{
+			letter-spacing: 10px;
+			@media only screen and (min-width: 768px){
+				letter-spacing: 18px;
+			}
+		}
+		h1{
+		    margin: 0.1em 0;
+	    	font-size: 60px;
+			span{
+				font-size: 40%;
+				display: block;
+				letter-spacing: 0;
+			}
+		    @media only screen and (min-width: 768px){
+		    	font-size: 200px;
+		    	span{
+		    		font-size: 35%;	
+		    	}
+		    }
+		}
+		.hojar1r{
+			z-index: 1;
+			max-width: 30px;
+			transform: translateY(-150px) translateX(100px);
+			z-index: 1;
+			@media only screen and (min-width: 768px){
+				animation-duration: 1s;
+				animation-name: hoja1r;
+				max-width: 50px;
+				transform: translateY(-150px) translateX(300px);
+			}
+		}
+		.hojar2r{
+			z-index: 1;
+			max-width: 20px;					
+			transform: translateY(100px) translateX(-100px) rotate(-100deg);
+			@media only screen and (min-width: 768px){
+				animation-duration: 1s;
+				animation-name: hoja2r;
+				max-width: 50px;
+				transform: translateY(250px) translateX(-500px) rotate(-100deg);
+			}
+		}
+		.nuber{
+			top: 5%;
+			left: 50%;
+			transform: translateY(-5%) translateX(-50%);
+			z-index: 1;
+			@media only screen and (min-width: 768px){
+				animation: nuber 5s ease-in-out infinite;
+				top: 10%;
+				transform: translateY(10%) translateX(-50%);
+			}
+		}
+		.arepa1r{
+		    max-width: 60px;
+		    transform: translateY(280%) translateX(-50%);
+		    z-index: 1;
+		    @media only screen and (min-width: 768px){
+		    	max-width: 100px;
+				animation-duration: 1s;
+				animation-name: arepa1r;
+		    	transform: translateY(300%) translateX(-50%);
+		    }
+		}
+		.arepa2r{
+			max-width: 130px;
+			z-index: 1;
+    		transform: translateY(0%) translateX(80%);
+    		@media only screen and (min-width: 768px){
+				animation-duration: 1s;
+				animation-name: arepa2r;
+    			transform: translateY(0%) translateX(150%);
+    			max-width: 250px;
+    		}
+		}
+		.colibri{
+		    transform: translateY(-50%) translateX(-200px) scaleX(-1);
+		    @media only screen and (min-width: 768px){
+		    	animation: coli2 2s ease-in-out infinite;
+		    	transform: translateY(-50%) translateX(-400px) scaleX(-1);
+		    }
+		}
+		.maizr{
+			transform: translateY(150px) translateX(-120px);
+			z-index: 1;
+			@media only screen and (min-width: 768px){
+				animation-duration: 1s;
+				animation-name: maizr;
+				transform: translateY(250px) translateX(-120px);
+			}
+		}
+		.mazorca{
+			max-width: 200px;
+			@media only screen and (min-width: 768px){
+				max-width: 400px;
+			}
+		}
+	}
+}
+
+@keyframes mazorca{
+  from {
+  	transform: translateY(100%) translateX(-50%);
+  }
+
+  to {
+  	transform: translateY(-50%) translateX(-50%);
+  }
+}
+@keyframes campecino{
+  from {
+  	transform: translateY(-140%) translateX(-95%);
+  }
+  to {
+  	transform: translateY(-100%) translateX(-100%);
+  }
+}
+@keyframes arepa2{
+  from {
+  	transform: translateY(-110%) translateX(-20%);
+  }
+  to {
+  	transform: translateY(-90%) translateX(-20%);
+  }
+}
+@keyframes arepa1{
+  from {
+  	transform: translateY(-110%) translateX(-20%);
+  }
+  to {
+  	transform: translateY(40%) translateX(-90%);
+  }
+}
+@keyframes maiz{
+  from {
+  	transform: translateY(290px) translateX(-300px);
+  }
+  to {
+  	transform: translateY(190px) translateX(-200px);
+  }
+}
+@keyframes float {
+	0% {
+		transform: translateY(150px) translateX(150px);
+	}
+	50% {
+		transform: translateY(140px) translateX(150px);
+	}
+	100% {
+		transform: translateY(150px) translateX(150px);
+	}
+}
+@keyframes floatnub {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-10px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+//recetas banner
+@keyframes coli2 {
+	0% {
+		transform: translateY(-50%) translateX(-400px) scaleX(-1);
+	}
+	50% {
+		transform: translateY(-40%) translateX(-400px) scaleX(-1);
+	}
+	100% {
+		transform: translateY(-50%) translateX(-400px) scaleX(-1);
+	}
+}
+@keyframes arepa1r {
+	from {
+		transform: translateY(100%) translateX(-20%);
+	}
+	to {
+		transform: translateY(300%) translateX(-50%);
+	}
+}
+@keyframes arepa2r {
+	from {
+		transform: translateY(0%) translateX(0%);
+	}
+	to {
+		transform: translateY(0%) translateX(150%);
+	}
+}
+@keyframes hoja2r {
+	from {
+		transform: translateY(0px) translateX(0px) rotate(-100deg);
+		
+	}
+	to {
+		transform: translateY(250px) translateX(-500px) rotate(-100deg);
+	}
+}
+@keyframes hoja1r {
+	from {
+		transform: translateY(0px) translateX(0px);
+		
+	}
+	to {
+		transform: translateY(-150px) translateX(300px);
+	}
+}
+@keyframes maizr {
+	from {
+		transform: translateY(0px) translateX(0px);
+		
+	}
+	to {
+		transform: translateY(250px) translateX(-120px);
+	}
+}
+@keyframes nuber {
+	0% {
+		transform: translateY(10%) translateX(-50%);
+	}
+	50% {
+		transform: translateY(0%) translateX(-50%);
+	}
+	100% {
+		transform: translateY(10%) translateX(-50%);
+	}
+}

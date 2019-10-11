@@ -1,0 +1,55 @@
+.nuestra-empresa{
+	position: relative;
+
+	.img-historia{
+		position: relative;
+		&:after,&:before{
+			content: "";
+			position: absolute;
+			display: block;
+		}
+		&:after{
+			left: -10px;
+			width: 200px;
+			height: 80px;
+			bottom: -20px;
+			background: url(img/maiz.png) no-repeat center center / contain;
+		}
+		&:before{
+			right: 0px;
+			width: 100px;
+			height: 100px;
+			bottom: -20px;
+			background: url(img/circle.png) no-repeat center center / contain;
+			@media only screen and (min-width: 992px){
+				right: -20px;
+			}
+		}
+	}
+	.imagen{
+		padding: 100px 15px 20px;
+		@media only screen and (min-width: 992px){
+			padding: 0px 0 20px;
+		}
+	}
+	.blue-block{
+		width: 50%;
+		right: 0;
+		top: 0px;
+		height: 60%;
+		@media only screen and (min-width: 992px){
+			top: -31%;
+			height: 100%;
+		}
+	}
+	.firma{
+		margin-top: -50px;
+	    position: relative;
+	    max-width: 303px;
+	    margin-left: 0px;
+	    margin-bottom: -20%;
+	    @media only screen and (min-width: 992px){
+	    	margin-left: -20px;
+	    }
+	}
+}

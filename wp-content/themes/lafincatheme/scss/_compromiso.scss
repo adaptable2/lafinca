@@ -1,0 +1,13 @@
+.vision{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.mision{
+	display: flex;
+	flex-wrap: wrap;
+	.text{
+		display: flex;
+		flex-wrap: wrap;
+	}
+}

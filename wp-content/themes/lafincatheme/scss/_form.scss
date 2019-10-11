@@ -1,0 +1,68 @@
+.contacto{
+	border-bottom: solid 2px white;
+	min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+.redes{
+	padding: 0;
+	list-style: none;
+	li{
+		display: inline-block;
+	}
+	img{
+		width: 100%;
+		max-width: 20px;
+	}
+}
+.text-form{
+	position: relative;
+	padding: 50px 0 40px;
+	margin-bottom: 30px;
+	&:after{
+		bottom: 0;
+	}
+	&:before{
+		top: 0;
+	}
+	&:after,&:before{
+		content: "";
+		left: 0;
+		width: 50px;
+		height: 1px;
+		position: absolute;
+		background: $verdeOscuro;
+	}
+}
+.form-contacto{
+	padding-top: 30px;
+	input[type="submit"]{
+		margin-top: 20px;
+		background: $amarillo;
+		color: $verdeOscuro;
+	}
+	label,input[type="submit"]{
+		font-family: 'Abril Fatface', cursive;
+		letter-spacing: 2px;
+	}
+	input{
+		margin-bottom: 10px;
+	}
+	textarea{
+		max-height: 150px;
+	}
+	input,textarea{
+		border: none;
+		border-radius: 0;
+	}
+}
+.title{
+	.subtitulo{
+		h2{
+			font-size: 25px;
+			@media only screen and (min-width: 992px){
+				font-size: 32px;
+			}
+		}
+	}
+}

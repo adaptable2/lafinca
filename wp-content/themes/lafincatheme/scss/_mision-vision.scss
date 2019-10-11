@@ -1,0 +1,27 @@
+.img-vision{
+	position: relative;
+	.blue-block{
+		width: 50%;
+		height: 100%;
+		top: 0;
+		@media only screen and (min-width: 992px){
+			left: -15px;
+			top: -40%;
+			height: 110%;
+		}
+	}
+	img{
+		max-width: 90%;
+		@media only screen and (min-width: 992px){
+			margin-top: -30%;
+		}
+	}
+}
+.img-mision{
+	img{
+		max-width: 70%;
+		@media only screen and (min-width: 992px){
+			max-width: 100%;
+		}
+	}
+}

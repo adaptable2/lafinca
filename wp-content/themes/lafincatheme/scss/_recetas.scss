@@ -1,0 +1,153 @@
+.recetas{
+	height: 100vh;
+	max-height: 768px;
+}
+.recetas-container{
+	position: relative;
+	overflow-x: hidden; 
+	&:before,&:after{
+		content: "";
+		position: absolute;	
+		display: block;
+		z-index: -1
+	}
+	&:after{
+		left: 0%;
+		bottom: 0;
+		width: 50%;
+		height: 30%;
+		background: $amarillo;
+		@media only screen and (min-width: 992px){
+			height: 40%;
+			width: 20%;
+			transform: translateX(-40%);
+			left: 40%;
+		}
+	}
+	&:before{
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 30%;
+		height: 40%;
+		background: $celeste;
+	}
+}
+.images{
+	position: absolute;
+}
+.aguacate{
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%);
+	max-width: 400px;
+	width: 40%;
+	min-width: 200px;
+	@media only screen and (min-width: 768px){
+		top: 40%;
+		left: 40%;
+	}
+}
+.arepa{
+	left: 80%;
+	top: 65%;
+	transform: translateY(-65%) translateX(-80%);
+	width: 20%;
+	@media only screen and (min-width: 992px){
+		width: 30%;
+		max-width: 200px;
+		top: 60%;
+		transform: translateY(-80%) translateX(-80%);
+
+	}
+}
+.hoja2{
+	top: 20%;
+	left: 50%;
+	transform: translateX(-40%) translateY(-20%);
+	max-width: 70px;
+	width: 10%;
+	@media only screen and (min-width: 992px){
+		max-width: 70px;
+		width: 10%;
+		left: 40%;
+	}
+}
+.hoja1{
+	top: 25%;
+	left: 80%;
+	transform: translateX(-70%) translateY(-25%);
+	max-width: 53px;
+	width: 5%;
+	@media only screen and (min-width: 992px){
+		left: 70%;
+		transform: translateX(-70%) translateY(-20%);
+	}
+}
+
+.maiz1{
+	top: 30%;
+	left: 90%;
+	transform: translateX(-90%) translateY(-30%);	
+	max-width: 60px;
+	display: none;
+	@media only screen and (min-width: 992px){
+		display: block;
+	}
+
+}
+
+.maiz2{
+	top: 65%;
+	left: 10%;
+	transform: translateX(-10%) translateY(-65%);
+	max-width: 25px;
+	@media only screen and (min-width: 992px){
+		left: 68%;
+		top: 45%;
+	    display: block;
+	    transform: translateX(-68%) translateY(-45%);
+	}
+}
+
+.maiz3{
+	top: 90%;
+	left: 65%;
+	transform: translateX(-65%) translateY(-90%);
+	max-width: 50px;
+	display: none;
+	@media only screen and (min-width: 992px){
+		display: block;
+	}
+}
+
+.maiz4{
+	top: 70%;
+	left: 10%;
+	transform: translateX(-10%) translateY(-70%);
+	max-width: 60px;
+	display: none;
+	width: 5%;
+	@media only screen and (min-width: 992px){
+		display: block;
+	}
+}
+.img-receta{
+	position: relative;
+	img{
+		max-width: 90%;
+		width: 100%;
+		position: relative;
+		z-index: 1;
+	}
+	&:after{
+		content: "";
+		width: 150px;
+		height: 50%;
+		left: 0;
+		position: absolute;
+		background: $celeste;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}
