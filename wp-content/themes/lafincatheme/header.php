@@ -32,12 +32,13 @@
 			            	<div class="col-lg-6 second-section-nav p-0">
 				                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
 				                    <?php
-				                    $defaults = array(
-				                        'container'             => 'false',
-				                        'echo'            => true,
-				                        'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-				                        'menu_class'            => 'navbar-nav'
-				                    );
+					                    $defaults = array(
+					                    	'theme_location'  => 'principal-menu',
+					                        'container'       => 'false',
+					                        'echo'            => true,
+					                        'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+					                        'menu_class'            => 'navbar-nav'
+					                    );
 				                    wp_nav_menu( $defaults );
 				                    ?>
 				                </div> 

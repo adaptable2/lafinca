@@ -1,4 +1,6 @@
 $(document).ready(function() {
+  // animaciones
+  AOS.init();
   //arco de texto en el banner del home
   $(".arco").arctext({radius: 400});
   // carrusel de productos home
@@ -87,8 +89,6 @@ $(document).ready(function() {
         $(window).scroll(function() {
           scrollmenu();
         });
-  // animaciones
-  AOS.init();
   //movimiento parallax
   var object1=$('.uno');
   var layer=$('.move-parallax');

@@ -64,15 +64,16 @@ if (function_exists('add_theme_support'))
 
 // HTML5 Blank navigation
 
-function registro_menu(){
+function registro_menus(){
     register_nav_menus(
         array(
-            'principal-menu' => __( 'Menú Principal' )
+            'principal-menu' => __( 'Menú Principal' ),
+            'internal-menu' => __( 'Menú Interna' )
         )
     );
 }
 
-add_action('init', 'registro_menu');
+add_action('init', 'registro_menus');
 
 function html5blank_nav()
 {
