@@ -31,7 +31,7 @@
 						</h2>
 					</div>
 					<div class="col-lg-12">
-						<a href="http://localhost/lafinca/producto" class='vermas'>Ver todas</a>
+						<a href="<?php echo get_home_url(); ?>/producto" class='vermas'>Ver todas</a>
 					</div>
 				</div>
 			</div>
@@ -211,7 +211,7 @@
 										</h2>
 									</div>
 									<div class="col-lg-12">
-										<a href="" class='vermas'>Ver más</a>
+										<a href="<?php echo get_home_url(); ?>/recetas" class='vermas'>Ver más</a>
 									</div>
 								</div>
 							</div>
