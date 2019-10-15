@@ -10,9 +10,9 @@
  				<img src="<?php echo get_template_directory_uri(); ?>/img/banner/maiz.png" alt="" class="img-banner maiz">
  				<img src="<?php echo get_template_directory_uri(); ?>/img/banner/arepa1.png" alt="" class="img-banner arepa1">
  				<img src="<?php echo get_template_directory_uri(); ?>/img/banner/arepa2.png" alt="" class="img-banner arepa2">
- 				<h2 class="arco" data-aos="fade-down">arepas de la</h2>
- 				<h1 data-aos="fade-left">FINCA</h1>
- 				<h2 data-aos="fade-up">desde 1983</h2>
+ 				<h2 class="arco wow fadeIn">arepas de la</h2>
+ 				<h1 class="wow FadeIn">FINCA</h1>
+ 				<h2 class="wow fadeIn">desde 1983</h2>
  			</div>
  		</div>
  	</div>
@@ -20,9 +20,9 @@
 <section class="productos py-5" id="productos" >
  	<div class="container-fluid">
  		<div class="row justify-content-center">
-			<div class="col-12 col-md-10" data-aos="fade-right">
+			<div class="col-12 col-md-10 wow bounceInLeft">
 				<div class="row align-items-center">
-					<div class="col-lg-4 color-verdeOscuro">
+					<div class="col-lg-4 color-verdeOscuro ">
 						<h2>Productos</h2>
 					</div>
 					<div class="col-lg-8">
@@ -35,7 +35,7 @@
 					</div>
 				</div>
 			</div>
- 			<div class="col-12 col-md-10 py-md-5" data-aos="fade-up" >
+ 			<div class="col-12 col-md-10 py-md-5" >
  				<div class="swiper-container carousel">
  					<div class="swiper-wrapper">
 		 				<?php 
@@ -90,20 +90,20 @@
  				$contentHist = wpautop($historia_desc, true);
 			          $historia_img = wp_get_attachment_url( get_post_thumbnail_id($historia->ID, 'full') ); // Url de la imagen en tamaño Full
 			          ?>
-			          <div class="col-md-12 order-1 order-lg-0" data-aos="fade-right">
+			          <div class="col-md-12 order-1 order-lg-0 wow bounceInLeft">
 			          	<h2 class="title-space color-celeste"><?php echo $historia_name;?></h2>
 			          </div>
-			          <div class="col-lg-2 subtitulo color-verdeOscuro order-0 order-lg-1" data-aos="fade-right">
+			          <div class="col-lg-2 subtitulo color-verdeOscuro order-0 order-lg-1 wow bounceInLeft">
 			          	<?php echo $historia_sub;?>
 			          </div>
-			          <div class="col-lg-5 order-2">
+			          <div class="col-lg-5 order-2 wow bounceInUp">
 			          	<p><?php echo $contentHist;?></p>
 			          </div>
 			          <div class="col-lg-5 imagen order-3">
-			          	<div class="blue-block" data-aos="fade-up">
+			          	<div class="blue-block wow bounceInDown">
 			          	</div>
-			          	<div class="img-historia" data-aos="fade-left">
-			          		<img src="<?php echo $historia_firma['guid'];?>" alt="" class="img-fluid firma">
+			          	<div class="img-historia">
+			          		<img src="<?php echo $historia_firma['guid'];?>" alt="" class="img-fluid firma wow">
 			          		<img src="<?php echo $historia_img;?>" alt="" class="img-fluid">
 			          	</div>
 			          </div>
@@ -134,30 +134,30 @@
 						$compromiso_namev = $compromiso->titulo_vision;
 		          $compromiso_img = wp_get_attachment_url( get_post_thumbnail_id($compromiso->ID, 'full') ); // Url de la imagen en tamaño Full
 		          ?>
-		          <div class="col-12 p-0 bg-amarillo vision" data-aos="fade-up">
+		          <div class="col-12 p-0 bg-amarillo vision wow bounceInLeft">
 		          	<div class="col-12 text-center">
 		          		<h2 class="title-space color-celeste"><?php echo $compromiso_name;?></h2>
 		          	</div>
-		          	<div class="col-lg-2 subtitulo color-verdeOscuro" data-aos="fade-left">
+		          	<div class="col-lg-2 subtitulo color-verdeOscuro">
 		          		<?php echo $compromiso_namev;?>
 		          	</div>
-		          	<div class="col-lg-5 color-amarillo" data-aos="fade-left">
+		          	<div class="col-lg-5 color-amarillo">
 		          		<p>
 		          			<?php echo $contentCom;?>
 		          		</p>
 		          	</div>
 		          </div>
-		          <div class="col-lg-10 p-0 mision" data-aos="fade-right">
+		          <div class="col-lg-10 p-0 mision">
 		          	<div class="col-lg-4 p-lg-0 img-vision py-5 text-right">
-		          		<div class="blue-block" data-aos="fade-up"></div>
+		          		<div class="blue-block wow bounceInUp"></div>
 		          		<img src="<?php echo $compromiso_img; ?>" class="img-fluid">
 		          	</div>
 		          	<div class="col-lg-8 p-0 text pb-5 py-lg-5">
-		          		<div class="col-lg-4 pl-0 pb-5 img-mision text-right">
+		          		<div class="col-lg-4 pl-0 pb-5 img-mision text-right wow bounceInRight">
 		          			<img src="<?php echo $compromiso_imgm['guid']; ?>" class="img-fluid">	
 		          		</div>
-		          		<div class="col-lg-8">
-		          			<div class="subtitulo color-verdeOscuro">
+		          		<div class="col-lg-8 wow bounceInRight">
+		          			<div class="subtitulo color-verdeOscuro ">
 		          				<?php echo $compromiso_namem;?>
 		          			</div>
 		          			<p><?php echo $compromiso_descm;?></p>	
@@ -224,8 +224,8 @@
 					?>
 				</div>
 			</div>
-		</section>
-<section class="title container py-2" id="contacto" data-aos="fade-right">
+</section>
+<section class="title container py-2 wow bounceInLeft" id="contacto">
 	<div class="row">
 		<?php 
 	    // Argumentos para una busqueda de post type
@@ -242,7 +242,7 @@
 				$contacto_code = $contacto->code;
 				$contacto_desc = $contacto->post_content;
 				?>
-				<div class="col-6 subtitulo d-flex align-items-center color-verdeOscuro">
+				<div class="col-6 subtitulo d-flex align-items-center color-verdeOscuro ">
 					<?php echo $contacto_sub;?>
 				</div>
 				<div class="col-6 color-celeste">
@@ -271,7 +271,7 @@
 					$contacto_desc = $contacto->post_content;
 					$contentform = wpautop($contacto_desc, true);
 					?>
-					<div class="col-lg-3" data-aos="fade-left">
+					<div class="col-lg-3 wow bounceInUp">
 						<div class='text-form'>
 							<?php echo $contentform;?>
 						</div>
@@ -280,10 +280,10 @@
 							<li><a href=""><img src="<?php echo get_template_directory_uri(); ?>/img/fb.svg" alt="" class="img-fluid"></a></li>
 						</ul>
 					</div>
-					<div class="col-lg-5" data-aos="fade-left">
+					<div class="col-lg-5 wow bounceInUp">
 						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127258.07442651757!2d-74.16239763296394!3d4.627102641016862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f999d930f59f3%3A0x902c740fd2c9ded6!2sCl.%2022%2C%20Bogot%C3%A1%2C%20Cundinamarca!5e0!3m2!1ses-419!2sco!4v1569947170581!5m2!1ses-419!2sco" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 					</div>
-					<div class="col-lg-4 color-white form-contacto" data-aos="fade-left">
+					<div class="col-lg-4 color-white form-contacto wow bounceInUp">
 						<?php echo $contacto_code;?>
 					</div>
 					<?php

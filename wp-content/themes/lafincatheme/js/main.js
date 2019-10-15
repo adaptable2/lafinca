@@ -1,6 +1,6 @@
 $(document).ready(function() {
   // animaciones
-  AOS.init();
+  new WOW().init();
   //arco de texto en el banner del home
   $(".arco").arctext({radius: 400});
   // carrusel de productos home
@@ -89,15 +89,15 @@ $(document).ready(function() {
         $(window).scroll(function() {
           scrollmenu();
         });
-  //movimiento parallax
-  var object1=$('.uno');
-  var layer=$('.move-parallax');
-  layer.mousemove(function(e){
-   var valueX=(e.pageX * -1 / 100); 
-   var valueY=(e.pageY * -1 / 100); 
+        //movimiento parallax
+        var object1=$('.uno');
+        var layer=$('.move-parallax,body');
+        layer.mousemove(function(e){
+          var valueX=(e.pageX * -1 / 100); 
+          var valueY=(e.pageY * -1 / 100); 
 
-   object1.css({
-    'transform':'translate3d('+valueX+'px,'+valueY+'px,0)'
-  });
- });
+          object1.css({
+            'transform':'translate3d('+valueX+'px,'+valueY+'px,0)'
+          });
+        });
 });
